@@ -1,0 +1,18 @@
+{
+  "name": "assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "antd": "^3.5.1",
+    "beatle": "^0.1.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-contextmenu": "^2.9.2",
+    "react-dom": "^16.3.2"
+  }
+}
