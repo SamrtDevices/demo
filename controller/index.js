@@ -39,12 +39,12 @@ exports.helloGen = async function (req) {
 /**
  * @api /
  */
-exports.welcomeTpl = function (req, callback) {
-  callback(null, {
-    tpl: 'index.html',
-    data: {
-      prefix: config.prefix === '/' ? '' : config.prefix
-    }
-  }, 'html');
-};
+// exports.welcomeTpl = function (req, callback) {
+//   callback(null, {
+//     tpl: 'index.html',
+//     data: {
+//       prefix: config.prefix === '/' ? '' : config.prefix
+//     }
+//   }, 'html');
+// };
 

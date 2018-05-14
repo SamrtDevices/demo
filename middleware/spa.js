@@ -1,5 +1,5 @@
 'use strict';
-const pathIgnore = require('@ali/path-ignore');
+const pathIgnore = require('path-ignore');
 const config = require('../config');
 
 module.exports = function (app, options) {
