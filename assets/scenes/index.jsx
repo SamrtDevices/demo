@@ -14,7 +14,7 @@ class Root extends Component {
     componentDidMount() {
         this.props.getDemoList().then(res => {
             console.log(res);
-        })
+        });
     }
 
     render() {

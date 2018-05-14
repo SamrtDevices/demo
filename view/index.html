@@ -12,9 +12,9 @@
   <% } %>
   <script>
     // 1. csrf
-    // window.ajaxHeader = {
-    //   'x-csrf-token': '<%= csrfToken %>'
-    // };
+    window.ajaxHeader = {
+      'x-csrf-token': '<%= csrfToken %>'
+    };
 
     // 2. env
     window.CONFIG = {};
