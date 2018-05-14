@@ -27,7 +27,11 @@ module.exports = {
       router: '/assets'
     },
     spa: {
-      enable: false
+      enable: true,
+      module: '../middleware/spa',
+      config: {
+        ignore: ['/api']
+      }
     }
   },
   // middleware: {

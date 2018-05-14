@@ -5,6 +5,10 @@ import Beatle from 'beatle';
 import './index.less';
 
 export default class Root extends Component {
+    static routeOptions = {
+        path: '/home'
+    }
+
     constructor(props) {
         super(props);
     }
