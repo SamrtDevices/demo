@@ -4,13 +4,17 @@ import ReactDOM from 'react-dom';
 import Beatle from 'beatle';
 import './index.less';
 
-export default class Root extends Component {
+class Root extends Component {
     static routeOptions = {
         path: '/home'
-    }
-
+    };
     constructor(props) {
         super(props);
+    };
+    componentDidMount() {
+        this.props.getDemoList().then(res => {
+            console.log(res);
+        })
     }
 
     render() {
@@ -19,3 +23,8 @@ export default class Root extends Component {
         )
     }
 }
+
+export default Beatle.connect([{
+    getDemoList: 'DemoModels.actions.getDemoList',
+    demoList: 'DemoModels.store.demoList'
+}], Root, true);
