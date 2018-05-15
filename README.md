@@ -10,7 +10,8 @@ honeycomb start  //启动服务
 ```
 # desc
 
-本项目基于react + antd 完成的一个前端框架，使用hc-proxy 组件完成跨域请求
+本项目基于react + antd 完成的一个前端框架（仅供学习使用），
+使用阿里开源项目hc-proxy 组件完成跨域请求, honeycomb 做后端框架，beatle作为前端框架
 
 # 脚手架页面
 
