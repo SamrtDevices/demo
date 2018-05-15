@@ -10,7 +10,6 @@ export default {
                 return Beatle.getApp('app').ajax.get(window.CONFIG.prefix + '/api/proxy/retdata');
             },
             callback: (nextStore, payload) => {
-                debugger;
                 nextStore.demoList = payload.data;
             }
         }

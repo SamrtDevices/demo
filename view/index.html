@@ -2,7 +2,7 @@
 <html lang="<%= G.i18nLang %>">
 <head>
   <meta charset="UTF-8">
-  <title>标签查询</title>
+  <title>demo</title>
   <link rel="icon" id="favicon" href="<%= prefix %>/assets/logo.ico" type="image/x-icon" />
   <link rel="stylesheet" href="<%= prefix %>/assets/app.css">
   <% if (privateCloud) { %>
@@ -12,9 +12,9 @@
   <% } %>
   <script>
     // 1. csrf
-    // window.ajaxHeader = {
-    //   'x-csrf-token': '<%= csrfToken %>'
-    // };
+    window.ajaxHeader = {
+      'x-csrf-token': '<%= csrfToken %>'
+    };
 
     // 2. env
     window.CONFIG = {};
@@ -24,7 +24,7 @@
   </script>
 </head>
 <body>
-  <div id="main"></div>
+  <div id="main" style="height: 100%;"></div>
   <% if (isDebug) { %>
     <script src="<%= prefix %>/assets/.build/build.js"></script>
   <% } %>

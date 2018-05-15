@@ -5,6 +5,9 @@
 ## usage
 
 ```sh
-honeycomb init -t simple simple
+npm i hc-proxy --save
+tnpm i @ali/honeypack --save
+
+make install //安装前端依赖
 ```
 # demo
